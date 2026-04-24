@@ -38,6 +38,7 @@
     font-size: 20px;
     line-height: 60px;
     color: #fff;
+    text-align: center;
   }
   .seal {
     position: absolute;
@@ -83,25 +84,6 @@
 </div>
 
 <button class="open-btn" onclick="window.location.href='letter.html'">Open</button>
-
-
-<audio id="song" src="Can_I_Call_You_Baby_Female_Version_Pink_Sweats_English_Ringtone_(by_Fringster.com).mp3"></audio>
-
-<script>
-function openLetter() {
-  let song = document.getElementById('song');
-  song.play().then(() => {
-    // Wait 1 second before redirect
-    setTimeout(() => {
-      window.location.href = 'letter.html';
-    }, 1000);
-  }).catch(err => {
-    console.log("Playback failed:", err);
-    window.location.href = 'letter.html';
-  });
-}
-</script>
-
 
 </body>
 </html>
